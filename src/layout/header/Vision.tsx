@@ -13,7 +13,7 @@ export default function Vision() {
           <p className="leading-5">増やす。</p>
         </div>
       </header>
-      <header className="fixed w-9 h-full top-0 right-0 font-bold text-center lg:hidden mt-24">
+      <header className="fixed w-9 h-full top-0 right-0 font-bold text-center lg:hidden mt-16 pt-1">
         <div className="m-auto mb-auto w-5">
           <p className="leading-5 mb-3">来世も</p>
           <p className="leading-5 mb-3">自分に生まれたいと</p>
