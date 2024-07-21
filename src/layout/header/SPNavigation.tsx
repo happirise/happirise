@@ -21,16 +21,15 @@ export default function SPNavigation() {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } fixed top-0 left-0 w-screen h-screen z-50 bg-white/75`}
+        } fixed top-0 left-0 w-screen h-screen z-50 bg-white/85`}
       >
         <button className="absolute top-0 right-0 m-4 mr-3">
           <CloseIcon
-            className="text-gray-500 text-right"
-            // sx={{ width: 30, height: 50 }}
+            className="text-right"
             onClick={() => setIsOpen(!isOpen)}
           />
         </button>
-        <nav className="flex flex-col text-center h-64 font-semibold justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <nav className="flex flex-col text-center h-64 font-bold justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {/* ビジョン → View More で Value */}
           <a
             className="cursor-pointer"
