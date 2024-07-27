@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
-import { type } from '../../.next/static/webpack/app/page.4330156e150c2c48.hot-update';
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
@@ -64,7 +64,10 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
       </>
-      <body className={notoSansJP.className}>{children}</body>
+      <body className={notoSansJP.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
