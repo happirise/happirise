@@ -1,17 +1,17 @@
 import Footer from '@/layout/footer';
 import Header from '@/layout/header';
-import Main from '@/app/home/main';
 import TopButton from '@/shared/TopButton';
+import Top from '@/app/home/components/Top';
+import Vision from '@/app/home/components/Vision';
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className="max-w-screen">
-        <Main />
-        <div id="message" className="lg:mx-12 mr-9 bg-red-300 h-[1000px]">
-          ご挨拶
-        </div>
+        <Top />
+        <Vision />
+        <div id="work" className="lg:mx-12 mr-9 bg-red-300 h-[300px]"></div>
         <div id="work" className="lg:mx-12 mr-9 bg-green-300 h-[2000px]">
           私たちの仕事
         </div>
