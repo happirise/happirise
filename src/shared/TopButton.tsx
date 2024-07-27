@@ -28,7 +28,7 @@ export default function TopButton() {
       <div className="fixed z-50">
         <button
           onClick={scrollToTop}
-          className="bg-white shadow-xl rounded-full fixed w-11 h-11 bottom-5 right-5 lg:w-16 lg:h-16 lg:bottom-7 lg:right-7 cursor-pointer"
+          className="bg-white shadow-xl rounded-full fixed bottom-4 right-4 w-16 h-16 lg:bottom-7 lg:right-7 cursor-pointer"
         >
           <div className="flex flex-col items-center -mt-1.5">
             <KeyboardArrowUpIcon className="text-black" />
