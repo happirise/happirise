@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="max-w-screen">
+      <main>
         <Top />
         <Vision />
         <div id="work" className="lg:mx-12 mr-9 bg-red-300 h-[300px]"></div>
