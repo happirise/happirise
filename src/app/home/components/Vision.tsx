@@ -34,7 +34,7 @@ const ImageContent = () => (
 
 export default function Vision() {
   return (
-    <Container id="vision" title="ビジョン" mt="-mt-8 lg:-mt-9">
+    <Container id="vision" title="ビジョン" mt="-mt-16 lg:-mt-9">
       <Title />
       <Content />
       <ImageContent />
