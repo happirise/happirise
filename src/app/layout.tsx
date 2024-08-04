@@ -9,7 +9,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: 'Happirise | 企業採用支援事業',
+  title: 'Happirise | 企業採用支援企業',
   description: '来世も自分に生まれたいと心から思える人間を増やす。',
   applicationName: 'Happirise',
   openGraph: {
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     url: 'https://happirise.vercel.app/',
     siteName: 'Happirise',
-    title: 'Happirise | 企業採用支援事業',
+    title: 'Happirise | 企業採用支援企業',
     description: '来世も自分に生まれたいと心から思える人間を増やす。',
     images: [
       {
         url: '/favicons/apple-touch-icon.png',
-        alt: 'Happirise | 企業採用支援事業',
+        alt: 'Happirise | 企業採用支援企業',
         width: 180,
         height: 180,
       },
