@@ -22,7 +22,7 @@ export default function SPNavigation() {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } fixed top-0 left-0 w-screen h-screen z-50 bg-white/85`}
+        } fixed top-0 left-0 w-screen h-screen z-50 bg-white/95`}
       >
         <button className="absolute top-0 right-0 m-4 mr-3">
           <CloseIcon
