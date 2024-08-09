@@ -29,7 +29,10 @@ export default function Values() {
         </div>
         <div className="h-60 lg:h-auto flex lg:flex-row flex-col justify-between items-center text-center mt-8">
           {values.map(({ title, descriptions }) => (
-            <div className="bg-gray-200 w-full lg:w-48 py-2 lg:rounded-3xl rounded-full flex flex-col items-center justify-center">
+            <div
+              key={title}
+              className="bg-gray-200 w-full lg:w-48 py-2 lg:rounded-3xl rounded-full flex flex-col items-center justify-center"
+            >
               <h3 className="lg:text-lg text-base font-semibold mb-1">
                 {title}
               </h3>
