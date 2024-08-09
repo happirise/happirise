@@ -30,6 +30,7 @@ export default function Services() {
       <div className="flex flex-col items-center m-auto">
         {services.map((service, index) => (
           <div
+            key={service.title}
             className={`flex items-center lg:w-[390px] w-full lg:pl-0 pl-5 ${
               index === services.length - 1 ? '' : 'mb-8'
             }`}
