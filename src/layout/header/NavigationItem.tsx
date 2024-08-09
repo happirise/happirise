@@ -8,13 +8,13 @@ export default function NavigationItem({ onClick }: Props) {
       <a className="cursor-pointer" href="#vision" onClick={onClick}>
         ビジョン
       </a>
-      {/* 我々ができること */}
+      {/* 私たちの仕事 */}
       <a className="cursor-pointer" href="#work" onClick={onClick}>
         私たちの仕事
       </a>
-      {/* お知らせ */}
-      <a className="cursor-pointer" href="#info" onClick={onClick}>
-        お知らせ
+      {/* 提供サービス */}
+      <a className="cursor-pointer" href="#services" onClick={onClick}>
+        提供サービス
       </a>
       {/* 代表メッセージ, 会社情報 → View More で 事業概要 */}
       <a className="cursor-pointer" href="#company" onClick={onClick}>
