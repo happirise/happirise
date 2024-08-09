@@ -1,4 +1,4 @@
-export default function Vision() {
+export default function CorporateMessage() {
   return (
     <>
       <header className="fixed w-12 h-full top-0 left-0 font-bold text-center items-center hidden lg:flex z-40">
@@ -14,7 +14,7 @@ export default function Vision() {
         </div>
       </header>
       <header className="fixed w-9 h-full top-0 right-0 font-bold text-center lg:hidden mt-16 pt-1 z-40">
-        <div className="m-auto mb-auto w-5">
+        <div className="m-auto mb-auto w-5 text-sm">
           <p className="leading-5 mb-3">来世も</p>
           <p className="leading-5 mb-3">自分に生まれたいと</p>
           <p className="leading-5 mb-3">心から思える人間を</p>

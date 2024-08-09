@@ -30,7 +30,7 @@ export default function SPNavigation() {
             onClick={() => setIsOpen(!isOpen)}
           />
         </button>
-        <nav className="flex flex-col text-center h-64 font-bold justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <nav className="flex flex-col text-center h-64 font-semibold justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <NavigationItem onClick={() => setIsOpen(!isOpen)} />
         </nav>
       </div>

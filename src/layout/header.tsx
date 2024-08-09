@@ -1,7 +1,7 @@
 import Title from '@/layout/header/Title';
 import PCNavigation from '@/layout/header/PCNavigation';
 import SPNavigation from '@/layout/header/SPNavigation';
-import Vision from '@/layout/header/Vision';
+import CorporateMessage from '@/layout/header/CorporateMessage';
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         <PCNavigation />
         <SPNavigation />
       </header>
-      <Vision />
+      <CorporateMessage />
     </>
   );
 }
