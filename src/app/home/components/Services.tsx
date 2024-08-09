@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from '../shared/Container';
 
 const services = [
@@ -39,7 +40,7 @@ export default function Services() {
               }`}
             >
               <div className="flex items-center lg:mr-10 mr-5 lg:w-1/5">
-                <img src={image} alt={title} className="h-20 mr-auto" />
+                <Image src={image} alt={title} className="h-20 mr-auto" />
               </div>
               <div className="">
                 <h3 className="text-lg font-semibold mb-3">{title}</h3>
