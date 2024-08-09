@@ -13,9 +13,11 @@ const config: Config = {
       backgroundImage: {
         home_main: "url('/images/home_main.png')",
         home_work: "url('/images/home_work.png')",
+        home_company: "url('/images/home_company.png')",
       },
       boxShadow: {
         home_work: '10px 10px 0px rgba(0, 0, 0, 0.6)',
+        home_company: '-10px 10px 0px rgba(0, 0, 0, 0.6)',
       },
     },
   },

@@ -11,18 +11,18 @@ type ContentProps = Readonly<{
 
 const Title = ({ titleNumber, titleString }: TitleProps) => (
   <div className="relative h-16 lg:h-16 mb-4 lg:mb-8">
-    <p className="absolute left-0 top-0 font-bold text-xl lg:text-2xl">
+    <p className="absolute left-0 top-0 font-semibold text-xl">
       {titleNumber}
     </p>
     <div className="absolute lg:-left-7 lg:-top-3 -left-4 border-solid border-r border-black lg:w-14 lg:h-14 w-10 h-10 rotate-45" />
-    <p className="absolute lg:left-7 lg:top-8 left-5 top-9 font-bold text-2xl lg:text-3xl">
+    <p className="absolute lg:left-7 lg:top-8 left-5 top-9 font-semibold text-2xl">
       {titleString}
     </p>
   </div>
 );
 
 const Content = ({ children }: ContentProps) => (
-  <p className="mb-4 lg:mb-8">{children}</p>
+  <p className="mb-4 lg:mb-8 text-sm lg:leading-9 leading-7">{children}</p>
 );
 
 export default function Work() {
