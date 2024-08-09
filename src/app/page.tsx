@@ -6,6 +6,7 @@ import Vision from '@/app/home/components/Vision';
 import Work from '@/app/home/components/Work';
 import Company from './home/components/Company';
 import Services from './home/components/Services';
+import Values from './home/components/Values';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Top />
         <Vision />
+        <Values />
         <Work />
         <Services />
         <Company />

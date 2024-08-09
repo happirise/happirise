@@ -13,7 +13,7 @@ const Content = () => (
   <p className="mb-4 lg:mb-8 text-sm lg:leading-9 leading-7">
     自分で自分の人生の選択をする為には、時にリスクを伴うチャレンジをする事もあるでしょう。その不安に打ち勝つには自分を信じる熱い信念が重要です。
     <br />
-    <span className="font-bold underline">
+    <span className="font-bold underline lg:leading-[5] text-balance">
       【私にはできる】✖️【そんな私が好き】= 自己好(効)力感
     </span>
     <br />
