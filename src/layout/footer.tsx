@@ -8,7 +8,7 @@ const notoSerif = Noto_Serif({
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 text-gray-200 mt-12 lg:py-7 lg:px-0 p-5">
+    <footer className="bg-gray-700 text-gray-200 lg:px-0 lg:py-7 px-5 py-6">
       <div className="max-w-[730px] m-auto h-full flex flex-col lg:gap-10 gap-5 justify-between items-center">
         <div className={`${notoSerif.className} w-full text-lg`}>Happirise</div>
         <div className="w-full font-light text-sm flex justify-between">

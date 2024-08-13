@@ -1,7 +1,7 @@
 'use client';
 
-import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 import NavigationItem from './NavigationItem';
 
 export default function SPNavigation() {
