@@ -1,4 +1,10 @@
 import Image from 'next/image';
+import { Noto_Serif } from 'next/font/google';
+
+const notoSerif = Noto_Serif({
+  subsets: ['latin'],
+  weight: ['900'],
+});
 
 export default function Title() {
   return (
@@ -12,7 +18,7 @@ export default function Title() {
       />
       <a
         href={'/'}
-        className="ml-2 lg:ml-2 text-base lg:text-lg font-black cursor-pointor"
+        className={`ml-2 lg:ml-2 text-base lg:text-lg font-black cursor-pointor ${notoSerif.className}`}
       >
         Happirise
       </a>

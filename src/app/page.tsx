@@ -19,7 +19,7 @@ export default function Home() {
         <Work />
         <Services />
         <Company />
-        <div id="contact" className="lg:mx-12 mr-9 bg-yellow-300 h-[1000px]">
+        <div id="contact" className="lg:mx-12 mr-9 h-[1000px]">
           お問い合わせ
         </div>
       </main>

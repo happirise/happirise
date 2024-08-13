@@ -26,7 +26,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="-mt-10">
+    <div className="-mt-16">
       <Container id="services">
         <h2 className="mb-10 text-center font-semibold text-2xl underline underline-offset-3">
           &nbsp;提供サービス&nbsp;
@@ -40,7 +40,13 @@ export default function Services() {
               }`}
             >
               <div className="flex items-center lg:mr-10 mr-5 lg:w-1/5">
-                <Image src={image} alt={title} className="h-20 mr-auto" />
+                <Image
+                  src={image}
+                  alt={title}
+                  width={60}
+                  height={60}
+                  className="w-20 mr-auto"
+                />
               </div>
               <div className="">
                 <h3 className="text-lg font-semibold mb-3">{title}</h3>
