@@ -7,6 +7,7 @@ import Work from '@/app/home/components/Work';
 import Company from './home/components/Company';
 import Services from './home/components/Services';
 import Values from './home/components/Values';
+import Contact from './home/components/Contact';
 
 export default function Home() {
   return (
@@ -19,9 +20,7 @@ export default function Home() {
         <Work />
         <Services />
         <Company />
-        <div id="contact" className="lg:mx-12 mr-9 bg-yellow-300 h-[1000px]">
-          お問い合わせ
-        </div>
+        <Contact />
       </main>
       <Footer />
       <TopButton />

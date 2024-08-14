@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import { ToastContainer } from 'react-toastify';
 import './globals.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
@@ -66,6 +68,7 @@ export default function RootLayout({
       </>
       <body className={notoSansJP.className}>
         {children}
+        <ToastContainer />
         <Analytics />
       </body>
     </html>
