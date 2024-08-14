@@ -46,7 +46,8 @@ export default function Contact() {
           autoClose: 2000,
         });
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error(err)
         toast.update(toastLoading, {
           render: 'メール送付を失敗しました。',
           type: 'error',
