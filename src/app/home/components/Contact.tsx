@@ -3,72 +3,23 @@
 import { useState } from 'react';
 import { InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 import { toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
-
-type ContactType = {
-  name: string;
-  email: string;
-  category: string;
-  message: string;
-};
-
-class EmailJsConfig {
-  serviceId: string;
-  templateId: string;
-  publicKey: string;
-
-  constructor() {
-    this.serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
-    this.templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
-    this.publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
-  }
-
-  isConfigured() {
-    return Boolean(this.serviceId && this.templateId && this.publicKey);
-  }
-}
+import { sendContactEmail } from '@/app/api/contact';
+import { ContactType } from '@/app/api/email';
 
 const CATEGORY_ITEMS = ['導入相談', 'キャリア相談'];
+const CONTACT_DEFAULT = {
+    name: '',
+    email: '',
+    category: CATEGORY_ITEMS[0],
+    message: '',
+}
 
 const RequiredIcon = () => (
   <span className="bg-blue-900 text-white px-2 py-0.5 ml-3 text-xs">必須</span>
 );
 
-const sendContactEmail = async ({
-  name,
-  email,
-  category,
-  message,
-}: ContactType) => {
-  const emailjsConfig = new EmailJsConfig();
-
-  if (!emailjsConfig.isConfigured()) {
-    toast.error('サーバーエラーが発生しました。');
-    throw new Error('EmailJS is not configured');
-  }
-
-  const { serviceId, templateId, publicKey } = emailjsConfig;
-
-  return emailjs.send(
-    serviceId,
-    templateId,
-    {
-      name,
-      email,
-      category,
-      message,
-    },
-    publicKey,
-  );
-};
-
 export default function Contact() {
-  const [contact, setContact] = useState<ContactType>({
-    name: '',
-    email: '',
-    category: CATEGORY_ITEMS[0],
-    message: '',
-  });
+  const [contact, setContact] = useState<ContactType>(CONTACT_DEFAULT);
   const onChange = (
     e:
       | React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -87,12 +38,7 @@ export default function Contact() {
 
     sendContactEmail({ ...contact })
       .then(() => {
-        setContact({
-          name: '',
-          email: '',
-          category: CATEGORY_ITEMS[0],
-          message: '',
-        });
+        setContact(CONTACT_DEFAULT);
         toast.update(toastLoading, {
           render: 'メール送付を成功しました。',
           type: 'success',
@@ -100,7 +46,7 @@ export default function Contact() {
           autoClose: 2000,
         });
       })
-      .catch((err) => {
+      .catch(() => {
         toast.update(toastLoading, {
           render: 'メール送付を失敗しました。',
           type: 'error',

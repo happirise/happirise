@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@emailjs/browser':
-        specifier: ^4.4.1
-        version: 4.4.1
+      '@emailjs/nodejs':
+        specifier: ^4.0.4
+        version: 4.0.4
       '@emotion/react':
         specifier: ^11.13.0
         version: 11.13.0(@types/react@18.3.3)(react@18.3.1)
@@ -137,8 +137,8 @@ packages:
     resolution: {integrity: sha512-xm8XrMKz0IlUdocVbYJe0Z9xEgidU7msskG8BbhnTPK/HZ2z/7FP7ykqPgrUH+C+r414mNfNWam1f2vqOjqjYQ==}
     engines: {node: '>=6.9.0'}
 
-  '@emailjs/browser@4.4.1':
-    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+  '@emailjs/nodejs@4.0.4':
+    resolution: {integrity: sha512-4aFjJGy8rurYo2sZcFjFSOHyjEeC6+PlnoYgGnEIGmOMWAjo1rZxGGLBAEm2FS9YD22bd/xrijxf8QHk2+cj+g==}
     engines: {node: '>=14.0.0'}
 
   '@emotion/babel-plugin@11.12.0':
@@ -2002,7 +2002,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@emailjs/browser@4.4.1': {}
+  '@emailjs/nodejs@4.0.4': {}
 
   '@emotion/babel-plugin@11.12.0':
     dependencies:
