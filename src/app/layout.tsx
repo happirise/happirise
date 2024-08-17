@@ -65,6 +65,10 @@ export default function RootLayout({
         />
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="google-site-verification"
+          content="gFzsL-gAEUddjH4vz2AT7UiKPxStBc1cI66fcLNlDy8"
+        />
       </>
       <body className={notoSansJP.className}>
         {children}
