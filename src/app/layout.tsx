@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: 'Happirise | 企業採用支援企業',
   description: '来世も自分に生まれたいと心から思える人間を増やす。',
   applicationName: 'Happirise',
+  verification: {
+    google: 'gFzsL-gAEUddjH4vz2AT7UiKPxStBc1cI66fcLNlDy8',
+  },
   openGraph: {
     type: 'website',
     locale: 'ja_JP',

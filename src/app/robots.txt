@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://happirise.vercel.app/sitemap.xml

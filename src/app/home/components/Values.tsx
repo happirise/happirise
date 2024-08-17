@@ -18,7 +18,7 @@ const values = [
 export default function Values() {
   return (
     <div className="-mt-16 -mb-28">
-      <Container id="value">
+      <Container id="values">
         <div>
           <h2 className="mb-10 text-center font-semibold text-2xl underline underline-offset-3">
             &nbsp;3 Value&nbsp;
